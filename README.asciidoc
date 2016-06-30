@@ -42,8 +42,8 @@ delimited by a ".".
 The magic strings must not be enclosed in angle brackets 
 when specified in the _service file!
 
-Either CI_CNT or B_CNT must be part of the _release_ p
-arameter!
+Either CI_CNT or B_CNT must be part of the _release_ 
+parameter!
 
 === Parameter releaseformat
 
