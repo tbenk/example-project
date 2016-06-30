@@ -19,7 +19,7 @@ Example:
 === Parameter release
 
 Specify the release to be used in the tarball. The release will not 
-be used in the generated filename, but it will be exported if the 
+be used in the generated filename but it will be exported if the 
 _export_ parameter was given.
 
 ==== Release Tag
@@ -48,7 +48,7 @@ arameter!
 === Parameter releaseformat
 
 Auto-generate release from checked out source using this format
-string. The release will not be used in the generated filename, 
+string. The release will not be used in the generated filename
 but it will be exported if the _export_ parameter was given.
 
 Either CI_CNT or B_CNT must be part of the _releaseformat_ parameter!
