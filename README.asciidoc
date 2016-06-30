@@ -4,7 +4,8 @@
 
 === Parameter export
 
-tar_scm will save the version and the revision information in the specified file. This file will be available for other services.
+tar_scm will save the version and the revision information in 
+the specified file. This file will be available for other services.
 
 Example:
 
@@ -17,7 +18,10 @@ Example:
 
 === Parameter release
 
-Specify the release to be used in the tarball.  Defaults to automatically  detected value formatted by the releaseformat parameter. The release will not be used in the generated filename, but it will be exported if the _export_ parameter was given.
+Specify the release to be used in the tarball.  Defaults to 
+automatically  detected value formatted by the releaseformat 
+parameter. The release will not be used in the generated filename, 
+but it will be exported if the _export_ parameter was given.
 
 ==== Release Tag
 
@@ -33,23 +37,28 @@ The default setting is
 Release: <CI_CNT>.<B_CNT>
 ----
 
-The custom release string and the magic strings must be delimited by a ".".
+The custom release string and the magic strings must be 
+elimited by a ".".
 
-The magic strings must not be enclosed in angle brackets when specified in the
-_service file!
+The magic strings must not be enclosed in angle brackets 
+when specified in the _service file!
 
-Either CI_CNT or B_CNT must be part of the _release_ parameter!
+Either CI_CNT or B_CNT must be part of the _release_ p
+arameter!
 
 === Parameter releaseformat
 
 Auto-generate release from checked out source using this format
-string.  This parameter is used if the _release_ parameter is not
-specified. The release will not be used in the generated filename, but it will be exported if the _export_ parameter was given.
+string. The release will not be used in the generated filename, 
+but it will be exported if the _export_ parameter was given.
 
 Either CI_CNT or B_CNT must be part of the _releaseformat_ parameter!
 
 
-For git, the value is passed to git log --date=short --pretty=format:... for the topmost commit, and the output from git is cleaned up to remove some unhelpful characters.  Here are some useful examples of strings which are expanded, see the git-log documentation for more.
+For git, the value is passed to git log --date=short --pretty=format:...  
+for the topmost commit, and the output from git is cleaned up to 
+remove some unhelpful characters.  Here are some useful examples 
+of strings which are expanded, see the git-log documentation for more.
 
 ----
       %ct               Commit time as a UNIX timestamp, e.g. 1384855778.
@@ -69,7 +78,8 @@ For git, the value is passed to git log --date=short --pretty=format:... for the
 
 ----
 
-For hg, the value is passed to hg log --template=....  See the hg documentation for more information.  The default is '{rev}'
+For hg, the value is passed to hg log --template=....  See the hg 
+documentation for more information.  The default is '{rev}'
 
 For bzr and svn, '%r' is expanded to the revision, and is the default.
 
@@ -83,7 +93,8 @@ Specify a base release as prefix.
 
 === Parameter import
 
-Use version and release string given in json file, do not detect it from source files.
+Use version and release string given in json file, do not detect it f
+rom source files.
 
 = Usage Examples
 
@@ -120,5 +131,6 @@ In this example, the _tar_scm_ service will
 
 The _set_version_ service will
 
-- read in the file _data.json_ and use the given values to replace the Service tag and the Release tag in the spec file
+- read in the file _data.json_ and use the given values to replace the 
+  Service tag and the Release tag in the spec file
 
