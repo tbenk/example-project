@@ -37,7 +37,7 @@ Release: <CI_CNT>.<B_CNT>
 ----
 
 The custom release string and the magic strings must be 
-elimited by a ".".
+delimited by a ".".
 
 The magic strings must not be enclosed in angle brackets 
 when specified in the _service file!
