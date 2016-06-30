@@ -120,5 +120,5 @@ In this example, the _tar_scm_ service will
 
 The _set_version_ service will
 
-- read in the file _data.json_ and use the given values to replace the Service field and the Release field in the spec file
+- read in the file _data.json_ and use the given values to replace the Service tag and the Release tag in the spec file
 
