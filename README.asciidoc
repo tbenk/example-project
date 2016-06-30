@@ -77,7 +77,7 @@ For bzr and svn, '%r' is expanded to the revision, and is the default.
 
 Specify a base release as prefix.
 
-= Service tar_scm
+= Service set_version
 
 == Additional Parameters
 
